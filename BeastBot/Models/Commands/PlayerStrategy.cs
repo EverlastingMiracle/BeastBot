@@ -13,6 +13,8 @@ namespace BeastBot.Models.Commands
 {
     class PlayerStrategy : IStrategy
     {
+
+        //RETURN PLAYER OBJECT NOT VOID
         public async Task DoAlgorithm(Message message, TelegramBotClient client)
         {
             HttpClient httpClient = new HttpClient();

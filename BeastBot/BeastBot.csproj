@@ -82,12 +82,15 @@
   <ItemGroup>
     <Compile Include="Models\Bot.cs" />
     <Compile Include="Models\Commands\Command.cs" />
+    <Compile Include="Models\Commands\EventCommand.cs" />
     <Compile Include="Models\Commands\FindCommand.cs" />
     <Compile Include="Models\Commands\GuildStrategy.cs" />
     <Compile Include="Models\Commands\IStrategy.cs" />
     <Compile Include="Models\Commands\PlayerStrategy.cs" />
     <Compile Include="Models\Commands\TopPvpCommand.cs" />
     <Compile Include="Models\DataModel.cs" />
+    <Compile Include="Models\EventModel.cs" />
+    <Compile Include="Models\TelegramUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

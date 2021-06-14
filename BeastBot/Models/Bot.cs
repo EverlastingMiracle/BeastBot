@@ -50,6 +50,7 @@ namespace BeastBot.Models
             commandsList = new List<Command>();
             commandsList.Add(new FindCommand());
             commandsList.Add(new TopPvpCommand());
+            commandsList.Add(new EventCommand());
 
             return client;
 
