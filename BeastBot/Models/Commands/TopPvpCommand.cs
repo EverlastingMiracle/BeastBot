@@ -18,7 +18,7 @@ namespace BeastBot.Models.Commands
             }
         }
 
-        public override async void Execute(Message message, TelegramBotClient client)
+        public override async Task Execute(Message message, TelegramBotClient client)
         {
             var chatId = message.Chat.Id;
             var messageId = message.MessageId;

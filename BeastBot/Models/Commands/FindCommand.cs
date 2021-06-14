@@ -26,14 +26,14 @@ namespace BeastBot.Models.Commands
         }
 
 
-        public override async void Execute(Message message, TelegramBotClient client)
+        public override async Task Execute(Message message, TelegramBotClient client)
         {
             var chatId = message.Chat.Id;
             var messageId = message.MessageId;
             if (message.Text.Contains("guild"))
             {
                 this.SetStrategy(new GuildStrategy());
-                //this.strategy.DoAlgorithm();
+                this.strategy.DoAlgorithm(message, client);
                 await client.SendTextMessageAsync(chatId, "end of guild", replyToMessageId: messageId);
             }
             else if (message.Text.Contains("player"))
